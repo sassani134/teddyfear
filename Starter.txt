@@ -1,0 +1,20 @@
+rails new TeddyFear -d postgresql -c tailwind
+git init
+git remote add origin git@github.com:sassani134/teddyfear.git
+git branch -M main
+git push -u origin main
+rails db:create
+
+bundle add solidus
+bin/rails g solidus:install
+-- Y  |  paypal  | solidus_starter_frontend
+bundle add solidus_stripe
+bundle exec rails g solibindus_stripe:install
+
+bin/importmap pin three
+rails g controller cookies index policy
+rails g controller ageGates index
+rails g stimulus threejs
+rails g stimulus modal
+rails g stimulus menu
+
