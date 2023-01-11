@@ -9,7 +9,7 @@ bundle add solidus
 bin/rails g solidus:install
 -- Y  |  paypal  | solidus_starter_frontend
 bundle add solidus_stripe
-bundle exec rails g solibindus_stripe:install
+bundle exec rails g solidus_stripe:install
 
 bin/importmap pin three
 rails g controller cookies index policy
